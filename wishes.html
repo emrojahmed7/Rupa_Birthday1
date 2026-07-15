@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>A Letter For You · Rupa 💌</title>
+  <meta name="description" content="A heartfelt birthday letter for Rupa." />
+  <meta name="theme-color" content="#f7c5d4" />
+  <meta property="og:title" content="A Letter For You · Rupa" />
+  <link rel="icon" href="favicon.ico" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,500;1,600;1,700&family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="theme-pink">
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader__heart">❤</div>
+    <p class="loader__text">Writing your letter…</p>
+    <div class="loader__bar"><div class="loader__bar-fill" id="loaderBar"></div></div>
+  </div>
+
+  <div id="progressBar" class="progress-bar" aria-hidden="true"></div>
+  <div class="sparkles" id="sparkles" aria-hidden="true"></div>
+  <div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+
+  <header class="nav" id="nav" role="banner">
+    <a href="index.html" class="nav__brand" aria-label="Home">Rupa&rsquo;s Day</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__links" id="navLinks" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="memories.html">Memories</a>
+      <a href="reasons.html">Reasons</a>
+      <a href="wishes.html" class="is-active" aria-current="page">Wishes</a>
+      <a href="surprise.html">Surprise</a>
+    </nav>
+  </header>
+
+  <main class="page" id="mainContent">
+    <section class="section section--center" aria-label="Birthday letter">
+      <div class="letter letter--handwritten reveal" id="letterContainer">
+        <div class="letter__glow" aria-hidden="true"></div>
+        <div class="letter__seal" aria-hidden="true"></div>
+
+        <h1 class="letter__title">Happy Birthday, Rupa</h1>
+
+        <!-- Typewriter target - text from JavaScript -->
+        <div class="letter__body-wrapper">
+          <p class="letter__body" id="typewriter" role="article" aria-label="Birthday letter"></p>
+          <span class="letter__cursor" id="typewriterCursor" aria-hidden="true">|</span>
+        </div>
+
+        <div class="letter__controls">
+          <button class="letter__control-btn" id="typewriterSkip" aria-label="Skip typing and reveal full letter">Skip →</button>
+          <span class="letter__progress" id="typewriterProgress" aria-hidden="true"></span>
+        </div>
+
+        <!-- Decorative divider -->
+        <hr class="letter__divider" aria-hidden="true" />
+
+        <!-- SIGNATURE SECTION -->
+        <div class="letter__sign">
+          <p class="letter__from">With warmest wishes,</p>
+          <p class="letter__name">Emroj</p>
+        </div>
+      </div>
+
+      <div class="section__cta reveal">
+        <a href="surprise.html" class="btn btn--glow btn--pulse">
+          <span>Open Your Surprise</span>
+          <span class="btn__icon" aria-hidden="true">🎁</span>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer" role="contentinfo">
+      <p>Made with <span class="footer__heart-static" aria-hidden="true">❤</span> just for you, Rupa.</p>
+      <button class="footer__secret" id="secretHeart" aria-label="Reveal a secret message" title="Click for a secret">♡</button>
+    </footer>
+  </main>
+
+  <!-- MUSIC PLAYER -->
+  <audio id="bgMusic" src="music/birthday-song.mp3" loop preload="metadata"></audio>
+  <div class="music" id="musicPlayer" role="complementary" aria-label="Music player">
+    <button class="music__btn" id="musicToggle" aria-label="Play background music">
+      <span class="music__icon" id="musicIcon" aria-hidden="true">🎵</span>
+    </button>
+    <div class="music__controls">
+      <span class="music__tooltip" id="musicTooltip">Tap to play music</span>
+      <div class="music__progress" role="slider" aria-label="Music progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div class="music__progress-fill" id="musicProgress"></div>
+      </div>
+    </div>
+  </div>
+
+  <button class="to-top" id="toTop" aria-label="Scroll back to top" title="Back to top">↑</button>
+
+  <!-- SECRET MODAL -->
+  <div class="secret-modal" id="secretModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="secretTitle">
+    <div class="secret-modal__card">
+      <button class="secret-modal__close" id="secretClose" aria-label="Close secret message">&times;</button>
+      <div class="secret-modal__sparkle" aria-hidden="true">✨</div>
+      <h3 id="secretTitle">A tiny secret…</h3>
+      <p>Read the letter again whenever you forget how loved you are. 💖</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- =========================
+       SEO / META
+       ========================= -->
+  <title>A Special Surprise for You, Rupa 🎉</title>
+  <meta name="description" content="A premium handcrafted digital birthday surprise made with love for Sadia Akter Rupa." />
+  <meta name="theme-color" content="#f7c5d4" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="A Special Surprise for You, Rupa 🎉" />
+  <meta property="og:description" content="A one-of-a-kind digital birthday gift made with love." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/hero-bg.jpg" />
+  <meta property="og:url" content="https://yourdomain.com" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="A Special Surprise for You, Rupa 🎉" />
+  <meta name="twitter:description" content="A premium digital birthday gift made with love." />
+
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,500;1,600;1,700&family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="theme-pink">
+
+  <!-- =========================
+       LOADING SCREEN
+       ========================= -->
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader__heart">❤</div>
+    <p class="loader__text">Preparing your surprise…</p>
+    <div class="loader__bar"><div class="loader__bar-fill" id="loaderBar"></div></div>
+  </div>
+
+  <!-- =========================
+       SCROLL PROGRESS INDICATOR
+       ========================= -->
+  <div id="progressBar" class="progress-bar" aria-hidden="true"></div>
+
+  <!-- =========================
+       DECORATIVE LAYERS
+       ========================= -->
+  <div class="sparkles" id="sparkles" aria-hidden="true"></div>
+  <div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+
+  <!-- =========================
+       STICKY NAVIGATION
+       ========================= -->
+  <header class="nav" id="nav" role="banner">
+    <a href="index.html" class="nav__brand" aria-label="Home">Rupa&rsquo;s Day</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__links" id="navLinks" aria-label="Primary navigation">
+      <a href="index.html" class="is-active" aria-current="page">Home</a>
+      <a href="memories.html">Memories</a>
+      <a href="reasons.html">Reasons</a>
+      <a href="wishes.html">Wishes</a>
+      <a href="surprise.html">Surprise</a>
+    </nav>
+  </header>
+
+  <main class="page" id="mainContent">
+    <!-- =========================
+         HERO SECTION
+         ========================= -->
+    <section class="hero" aria-label="Birthday welcome">
+      <div class="hero__overlay"></div>
+      <div class="hero__gradient"></div>
+
+      <div class="hero__content hero--letter reveal">
+        <!-- DATE -->
+        <p class="hero__date">17 July 2026</p>
+
+        <!-- DECORATIVE ORNAMENT -->
+        <div class="hero__ornament" aria-hidden="true">✦</div>
+
+        <!-- MAIN HEADING -->
+        <h1 class="hero__headline">For Someone <span class="hero__headline-highlight">Truly Unforgettable</span> ✨</h1>
+
+        <!-- LEAD LINE -->
+        <p class="hero__lead">This isn&rsquo;t just another birthday website.</p>
+
+        <!-- BODY -->
+        <p class="hero__text">
+          It&rsquo;s a small collection of memories, gratitude, smiles, and heartfelt
+          wishes&mdash;carefully created to celebrate someone who has made ordinary
+          moments feel a little more meaningful.
+        </p>
+
+        <p class="hero__whisper">So before you click any further&hellip;</p>
+        <p class="hero__whisper">Just remember this&mdash;</p>
+
+        <!-- DECORATIVE DIVIDER -->
+        <hr class="hero__divider" aria-hidden="true" />
+
+        <!-- EMPHASISED AFFIRMATION -->
+        <p class="hero__highlight">
+          You are appreciated more than you know,<br />
+          valued more than you realize,<br />
+          and celebrated exactly as you are.
+        </p>
+
+        <!-- CLOSING SIGNATURE -->
+        <p class="hero__signature">Happy Birthday, Rupa 🤍</p>
+
+        <a href="memories.html" class="btn btn--glow btn--pulse" aria-label="Begin the surprise experience">
+          <span>Start the Surprise</span>
+          <span class="btn__icon">❤️</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- =========================
+         PREVIEW CARDS - Quick Navigation
+         ========================= -->
+    <section class="preview-section" aria-label="Quick preview of sections">
+      <div class="preview-grid">
+        <a href="memories.html" class="preview-card reveal">
+          <span class="preview-card__icon">📸</span>
+          <h3 class="preview-card__title">Memories</h3>
+          <p class="preview-card__desc">Our beautiful journey together</p>
+          <span class="preview-card__arrow">→</span>
+        </a>
+        <a href="reasons.html" class="preview-card reveal">
+          <span class="preview-card__icon">💫</span>
+          <h3 class="preview-card__title">Reasons</h3>
+          <p class="preview-card__desc">Why you're so special</p>
+          <span class="preview-card__arrow">→</span>
+        </a>
+        <a href="wishes.html" class="preview-card reveal">
+          <span class="preview-card__icon">💌</span>
+          <h3 class="preview-card__title">Wishes</h3>
+          <p class="preview-card__desc">A heartfelt letter for you</p>
+          <span class="preview-card__arrow">→</span>
+        </a>
+        <a href="surprise.html" class="preview-card reveal preview-card--special">
+          <span class="preview-card__icon">🎁</span>
+          <h3 class="preview-card__title">Surprise</h3>
+          <p class="preview-card__desc">The grand finale awaits</p>
+          <span class="preview-card__arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+      <p>Made with <span class="footer__heart-static" aria-hidden="true">❤</span> just for you, Rupa.</p>
+      <button class="footer__secret" id="secretHeart" aria-label="Reveal a secret message" title="Click for a secret">♡</button>
+    </footer>
+  </main>
+
+  <!-- =========================
+       GLOBAL MUSIC PLAYER
+       ========================= -->
+  <audio id="bgMusic" src="music/birthday-song.mp3" loop preload="metadata"></audio>
+  <div class="music" id="musicPlayer" role="complementary" aria-label="Music player">
+    <button class="music__btn" id="musicToggle" aria-label="Play background music">
+      <span class="music__icon" id="musicIcon" aria-hidden="true">🎵</span>
+    </button>
+    <div class="music__controls">
+      <span class="music__tooltip" id="musicTooltip">Tap to play music</span>
+      <div class="music__progress" role="slider" aria-label="Music progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div class="music__progress-fill" id="musicProgress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BACK TO TOP -->
+  <button class="to-top" id="toTop" aria-label="Scroll back to top" title="Back to top">↑</button>
+
+  <!-- =========================
+       SECRET POPUP
+       ========================= -->
+  <div class="secret-modal" id="secretModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="secretTitle">
+    <div class="secret-modal__card">
+      <button class="secret-modal__close" id="secretClose" aria-label="Close secret message">&times;</button>
+      <div class="secret-modal__sparkle" aria-hidden="true">✨</div>
+      <h3 id="secretTitle">A tiny secret…</h3>
+      <p>
+        Even when I&rsquo;m quiet, you&rsquo;re always my favourite thought.
+        Happy birthday, forever. 💖
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

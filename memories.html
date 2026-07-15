@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Beautiful Memories · Rupa 🎉</title>
+  <meta name="description" content="A gallery of beautiful memories for Rupa." />
+  <meta name="theme-color" content="#f7c5d4" />
+  <meta property="og:title" content="Our Memories · Rupa" />
+  <meta property="og:image" content="images/Rupa_1.jpg" />
+  <link rel="icon" href="favicon.ico" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,500;1,600;1,700&family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="theme-pink">
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader__heart">❤</div>
+    <p class="loader__text">Loading memories…</p>
+    <div class="loader__bar"><div class="loader__bar-fill" id="loaderBar"></div></div>
+  </div>
+
+  <div id="progressBar" class="progress-bar" aria-hidden="true"></div>
+  <div class="sparkles" id="sparkles" aria-hidden="true"></div>
+  <div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+
+  <header class="nav" id="nav" role="banner">
+    <a href="index.html" class="nav__brand" aria-label="Home">Rupa&rsquo;s Day</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__links" id="navLinks" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="memories.html" class="is-active" aria-current="page">Memories</a>
+      <a href="reasons.html">Reasons</a>
+      <a href="wishes.html">Wishes</a>
+      <a href="surprise.html">Surprise</a>
+    </nav>
+  </header>
+
+  <main class="page" id="mainContent">
+    <section class="section" aria-label="Memory gallery">
+      <div class="section__head reveal">
+        <span class="section__badge" aria-hidden="true">📸</span>
+        <h1 class="section__title">Beautiful <span class="section__title-highlight">Memories</span></h1>
+        <p class="section__subtitle">Little moments that mean the whole world.</p>
+        <div class="section__divider" aria-hidden="true"></div>
+      </div>
+
+      <!-- =========================
+           MEMORY GALLERY GRID
+           ========================= -->
+      <div class="gallery" id="gallery">
+        <!-- Memory 1 -->
+        <figure class="gallery__item reveal" data-index="0" role="button" tabindex="0" aria-label="Open memory: Where it all began">
+          <div class="gallery__image-wrapper">
+            <img src="Rupa_1.png" alt="A cherished memory with Rupa - Where it all began" loading="lazy" />
+            <div class="gallery__overlay">
+              <span class="gallery__overlay-icon">🔍</span>
+            </div>
+          </div>
+          <figcaption>
+            <span class="gallery__caption">Where it all began</span>
+            <span class="gallery__date" aria-hidden="true">✦</span>
+          </figcaption>
+          <div class="memory-note">
+            <span class="memory-note__icon" aria-hidden="true">📝</span>
+            <span>I never imagined the person behind this photo would one day become my best friend. Life truly has the most beautiful surprises.</span>
+          </div>
+        </figure>
+
+        <!-- Memory 2 -->
+        <figure class="gallery__item reveal" data-index="1" role="button" tabindex="0" aria-label="Open memory: One Small Notification">
+          <div class="gallery__image-wrapper">
+            <img src="Rupa_2.png" alt="A cherished memory with Rupa - One Small Notification" loading="lazy" />
+            <div class="gallery__overlay">
+              <span class="gallery__overlay-icon">🔍</span>
+            </div>
+          </div>
+          <figcaption>
+            <span class="gallery__caption">One Small Notification</span>
+            <span class="gallery__date">08-05-2026 · 22:11</span>
+          </figcaption>
+          <div class="memory-note">
+            <span class="memory-note__icon" aria-hidden="true">📝</span>
+            <span>It started with a simple request to join a Messenger group. Funny how the smallest notifications can quietly become some of the biggest moments in a person's life.</span>
+          </div>
+        </figure>
+
+        <!-- Memory 3 -->
+        <figure class="gallery__item reveal" data-index="2" role="button" tabindex="0" aria-label="Open memory: Our First Walk">
+          <div class="gallery__image-wrapper">
+            <img src="Rupa_3.png" alt="A cherished memory with Rupa - Our First Walk" loading="lazy" />
+            <div class="gallery__overlay">
+              <span class="gallery__overlay-icon">🔍</span>
+            </div>
+          </div>
+          <figcaption>
+            <span class="gallery__caption">Our First Walk</span>
+            <span class="gallery__date" aria-hidden="true">✦</span>
+          </figcaption>
+          <div class="memory-note">
+            <span class="memory-note__icon" aria-hidden="true">📝</span>
+            <span>Our first real conversation wasn't rushed or planned. We just walked around campus, talked for hours, and somehow the unfamiliar started feeling surprisingly comfortable.</span>
+          </div>
+        </figure>
+
+        <!-- Memory 4 -->
+        <figure class="gallery__item reveal" data-index="3" role="button" tabindex="0" aria-label="Open memory: A Quiet Transformation">
+          <div class="gallery__image-wrapper">
+            <img src="Rupa_4.png" alt="A cherished memory with Rupa - A Quiet Transformation" loading="lazy" />
+            <div class="gallery__overlay">
+              <span class="gallery__overlay-icon">🔍</span>
+            </div>
+          </div>
+          <figcaption>
+            <span class="gallery__caption">A Quiet Transformation</span>
+            <span class="gallery__date" aria-hidden="true">✦</span>
+          </figcaption>
+          <div class="memory-note">
+            <span class="memory-note__icon" aria-hidden="true">📝</span>
+            <span>Before this friendship, I was the person who stayed quiet in a corner. After meeting you, I slowly learned how to talk, join conversations, and become part of the world around me.</span>
+          </div>
+        </figure>
+
+        <!-- Memory 5 -->
+        <figure class="gallery__item reveal" data-index="4" role="button" tabindex="0" aria-label="Open memory: The Best Part of University">
+          <div class="gallery__image-wrapper">
+            <img src="Rupa_5.png" alt="A cherished memory with Rupa - The Best Part of University" loading="lazy" />
+            <div class="gallery__overlay">
+              <span class="gallery__overlay-icon">🔍</span>
+            </div>
+          </div>
+          <figcaption>
+            <span class="gallery__caption">The Best Part of University</span>
+            <span class="gallery__date" aria-hidden="true">✦</span>
+          </figcaption>
+          <div class="memory-note">
+            <span class="memory-note__icon" aria-hidden="true">📝</span>
+            <span>When I look back at university life, I know I won't remember every class or every routine day. But I'll remember the friendship that made those days feel more alive.</span>
+          </div>
+        </figure>
+
+        <!-- Memory 6 -->
+        <figure class="gallery__item reveal" data-index="5" role="button" tabindex="0" aria-label="Open memory: The Difference You Made">
+          <div class="gallery__image-wrapper">
+            <img src="Rupa_6.png" alt="A cherished memory with Rupa - The Difference You Made" loading="lazy" />
+            <div class="gallery__overlay">
+              <span class="gallery__overlay-icon">🔍</span>
+            </div>
+          </div>
+          <figcaption>
+            <span class="gallery__caption">The Difference You Made</span>
+            <span class="gallery__date" aria-hidden="true">✦</span>
+          </figcaption>
+          <div class="memory-note">
+            <span class="memory-note__icon" aria-hidden="true">📝</span>
+            <span>You didn't try to change who I was—you simply made me feel comfortable enough to become more of myself.</span>
+          </div>
+        </figure>
+      </div>
+
+      <!-- Memory quote -->
+      <div class="section__quote reveal" aria-hidden="true">
+        <blockquote>
+          "Sometimes, the most beautiful memories are the ones we never planned for."
+        </blockquote>
+      </div>
+
+      <div class="section__cta reveal">
+        <a href="reasons.html" class="btn btn--glow">
+          <span>Next: Why You&rsquo;re Special</span>
+          <span class="btn__icon" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer" role="contentinfo">
+      <p>Made with <span class="footer__heart-static" aria-hidden="true">❤</span> just for you, Rupa.</p>
+      <button class="footer__secret" id="secretHeart" aria-label="Reveal a secret message" title="Click for a secret">♡</button>
+    </footer>
+  </main>
+
+  <!-- =========================
+       LIGHTBOX MODAL
+       ========================= -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox__close" id="lbClose" aria-label="Close image viewer">&times;</button>
+    <button class="lightbox__nav lightbox__prev" id="lbPrev" aria-label="Previous image">‹</button>
+    <figure class="lightbox__stage">
+      <div class="lightbox__loader" id="lbLoader" aria-hidden="true"></div>
+      <img id="lbImg" src="" alt="" />
+      <figcaption id="lbCaption"></figcaption>
+      <span class="lightbox__counter" id="lbCounter"></span>
+    </figure>
+    <button class="lightbox__nav lightbox__next" id="lbNext" aria-label="Next image">›</button>
+    <button class="lightbox__play" id="lbPlay" aria-label="Start or pause slideshow">▶ Slideshow</button>
+  </div>
+
+  <!-- MUSIC PLAYER -->
+  <audio id="bgMusic" src="music/birthday-song.mp3" loop preload="metadata"></audio>
+  <div class="music" id="musicPlayer" role="complementary" aria-label="Music player">
+    <button class="music__btn" id="musicToggle" aria-label="Play background music">
+      <span class="music__icon" id="musicIcon" aria-hidden="true">🎵</span>
+    </button>
+    <div class="music__controls">
+      <span class="music__tooltip" id="musicTooltip">Tap to play music</span>
+      <div class="music__progress" role="slider" aria-label="Music progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div class="music__progress-fill" id="musicProgress"></div>
+      </div>
+    </div>
+  </div>
+
+  <button class="to-top" id="toTop" aria-label="Scroll back to top" title="Back to top">↑</button>
+
+  <!-- SECRET MODAL -->
+  <div class="secret-modal" id="secretModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="secretTitle">
+    <div class="secret-modal__card">
+      <button class="secret-modal__close" id="secretClose" aria-label="Close secret message">&times;</button>
+      <div class="secret-modal__sparkle" aria-hidden="true">✨</div>
+      <h3 id="secretTitle">A tiny secret…</h3>
+      <p>Every photo here is a reason I&rsquo;m grateful for you. 💖</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

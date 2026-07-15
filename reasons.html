@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Why You&rsquo;re Special · Rupa ❤️</title>
+  <meta name="description" content="6 reasons why Rupa is so special." />
+  <meta name="theme-color" content="#f7c5d4" />
+  <meta property="og:title" content="Why You're Special · Rupa" />
+  <link rel="icon" href="favicon.ico" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,500;1,600;1,700&family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="theme-pink">
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader__heart">❤</div>
+    <p class="loader__text">Counting the reasons…</p>
+    <div class="loader__bar"><div class="loader__bar-fill" id="loaderBar"></div></div>
+  </div>
+
+  <div id="progressBar" class="progress-bar" aria-hidden="true"></div>
+  <div class="sparkles" id="sparkles" aria-hidden="true"></div>
+  <div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+
+  <header class="nav" id="nav" role="banner">
+    <a href="index.html" class="nav__brand" aria-label="Home">Rupa&rsquo;s Day</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__links" id="navLinks" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="memories.html">Memories</a>
+      <a href="reasons.html" class="is-active" aria-current="page">Reasons</a>
+      <a href="wishes.html">Wishes</a>
+      <a href="surprise.html">Surprise</a>
+    </nav>
+  </header>
+
+  <main class="page" id="mainContent">
+    <section class="section" aria-label="Reasons why Rupa is special">
+      <div class="section__head reveal">
+        <span class="section__badge" aria-hidden="true">💫</span>
+        <h1 class="section__title">Why You&rsquo;re <span class="section__title-highlight">So Special</span></h1>
+        <p class="section__subtitle">Tap a card to reveal each reason.</p>
+        <div class="section__divider" aria-hidden="true"></div>
+        <div class="section__counter" id="reasonCounter" aria-live="polite">0 / 6 revealed</div>
+      </div>
+
+      <!-- =========================
+           REASON CARDS
+           ========================= -->
+      <div class="reasons" id="reasonsContainer">
+        <!-- REASON 1 -->
+        <button class="reason reveal" data-reason="1" aria-expanded="false" role="button">
+          <span class="reason__num" aria-hidden="true">01</span>
+          <span class="reason__icon" aria-hidden="true">💖</span>
+          <span class="reason__label">Your Heart</span>
+          <span class="reason__preview">The way you care…</span>
+          <span class="reason__message">
+            The way you care, support, and think about others makes your heart one of the most beautiful things about you. Never let the world change that.
+          </span>
+        </button>
+
+        <!-- REASON 2 -->
+        <button class="reason reveal" data-reason="2" aria-expanded="false" role="button">
+          <span class="reason__num" aria-hidden="true">02</span>
+          <span class="reason__icon" aria-hidden="true">😊</span>
+          <span class="reason__label">Your Smile</span>
+          <span class="reason__preview">Your smile has a quiet magic…</span>
+          <span class="reason__message">
+            Your smile has a quiet magic—it brings comfort, spreads happiness, and reminds people that even ordinary moments can feel special.
+          </span>
+        </button>
+
+        <!-- REASON 3 -->
+        <button class="reason reveal" data-reason="3" aria-expanded="false" role="button">
+          <span class="reason__num" aria-hidden="true">03</span>
+          <span class="reason__icon" aria-hidden="true">💪</span>
+          <span class="reason__label">Your Strength</span>
+          <span class="reason__preview">You are stronger than you think…</span>
+          <span class="reason__message">
+            You are stronger than you think. Even when you don't see it yourself, your courage, resilience, and determination inspire the people around you—including me.
+          </span>
+        </button>
+
+        <!-- REASON 4 -->
+        <button class="reason reveal" data-reason="4" aria-expanded="false" role="button">
+          <span class="reason__num" aria-hidden="true">04</span>
+          <span class="reason__icon" aria-hidden="true">🌸</span>
+          <span class="reason__label">Your Kindness</span>
+          <span class="reason__preview">Kindness isn't something you try…</span>
+          <span class="reason__message">
+            Kindness isn't something you try to show—it's simply a part of who you are, and that's what makes you truly special.
+          </span>
+        </button>
+
+        <!-- REASON 5 -->
+        <button class="reason reveal" data-reason="5" aria-expanded="false" role="button">
+          <span class="reason__num" aria-hidden="true">05</span>
+          <span class="reason__icon" aria-hidden="true">🧠</span>
+          <span class="reason__label">Your Mind</span>
+          <span class="reason__preview">The way you think, learn, and grow…</span>
+          <span class="reason__message">
+            The way you think, learn, and grow reminds me that intelligence is not just about knowledge—it's about perspective.
+          </span>
+        </button>
+
+        <!-- REASON 6 -->
+        <button class="reason reveal" data-reason="6" aria-expanded="false" role="button">
+          <span class="reason__num" aria-hidden="true">06</span>
+          <span class="reason__icon" aria-hidden="true">🌟</span>
+          <span class="reason__label">Simply You</span>
+          <span class="reason__preview">Long after people forget what we said…</span>
+          <span class="reason__message">
+            Long after people forget what we said or did, they'll remember how we made them feel. You have a beautiful way of making people feel valued, comfortable, and appreciated. Never lose that part of yourself. It's one of the rarest things about you.
+          </span>
+        </button>
+      </div>
+
+      <!-- Celebration when all revealed -->
+      <div class="reasons__celebration" id="reasonsCelebration" aria-hidden="true">
+        <span class="reasons__celebration-icon" aria-hidden="true">🎉</span>
+        <p class="reasons__celebration-text">All reasons revealed! You truly are one of a kind. ✨</p>
+      </div>
+
+      <div class="section__cta reveal">
+        <a href="wishes.html" class="btn btn--glow">
+          <span>Next: A Letter For You</span>
+          <span class="btn__icon" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer" role="contentinfo">
+      <p>Made with <span class="footer__heart-static" aria-hidden="true">❤</span> just for you, Rupa.</p>
+      <button class="footer__secret" id="secretHeart" aria-label="Reveal a secret message" title="Click for a secret">♡</button>
+    </footer>
+  </main>
+
+  <!-- MUSIC PLAYER -->
+  <audio id="bgMusic" src="music/birthday-song.mp3" loop preload="metadata"></audio>
+  <div class="music" id="musicPlayer" role="complementary" aria-label="Music player">
+    <button class="music__btn" id="musicToggle" aria-label="Play background music">
+      <span class="music__icon" id="musicIcon" aria-hidden="true">🎵</span>
+    </button>
+    <div class="music__controls">
+      <span class="music__tooltip" id="musicTooltip">Tap to play music</span>
+      <div class="music__progress" role="slider" aria-label="Music progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div class="music__progress-fill" id="musicProgress"></div>
+      </div>
+    </div>
+  </div>
+
+  <button class="to-top" id="toTop" aria-label="Scroll back to top" title="Back to top">↑</button>
+
+  <!-- SECRET MODAL -->
+  <div class="secret-modal" id="secretModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="secretTitle">
+    <div class="secret-modal__card">
+      <button class="secret-modal__close" id="secretClose" aria-label="Close secret message">&times;</button>
+      <div class="secret-modal__sparkle" aria-hidden="true">✨</div>
+      <h3 id="secretTitle">A tiny secret…</h3>
+      <p>There are a thousand more reasons… these six were just the start. 💖</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
